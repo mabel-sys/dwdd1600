@@ -45,8 +45,13 @@ nav li.active a {
   color: #f2b705;
 }
 
+
 nav li a:hover {
   color: white;
+}
+
+main {
+  padding: 1rem 10px;
 }
 main h1 {
   color: #B40412;
@@ -129,7 +134,5 @@ footer p {
   letter-spacing: 3px;
 }
 
-main {
-  padding: 1rem 10px;
-}
+
 
