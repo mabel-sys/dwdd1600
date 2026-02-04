@@ -1,0 +1,108 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 10px; /* left/right breathing room */
+  background-color: #f2f2f2; /* light grey body */
+  font-family: 'Inter', Arial, sans-serif;
+  font-weight: 300;
+  color: #111;
+}
+
+/* =========================
+   HEADINGS & TEXT
+========================= */
+
+h1, h2 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+  background-color: #f4b400; /* bright Savvy yellow */
+  padding: 18px 20px;       /* taller bar */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;          /* visible by default */
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #000000;          /* black on hover */
+}
+
+/* =========================
+   CONTENT SECTIONS
+========================= */
+
+section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* =========================
+   LIST STYLING
+========================= */
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 24px 20px;
+  text-align: center;
+  font-weight: 300;
+}
+
+footer p {
+  margin: 6px 0;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+footer a {
+  color: #f4b400;          /* yellow phone number */
+  text-decoration: none;
+  font-weight: 300;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
