@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download Savvy TechPacks by submitting your contact information.">
+  <link rel="stylesheet" href="savvy.css">
+  <title>Savvy TechPacks: Download</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+  <p><span>Savvy TechPacks</span> – Ready-to-Use Tech Packs for Emerging Brands</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">About</a></li>
+    <li><a href="techpacks.html">TechPacks</a></li>
+    <li><a href="gallery.html">Gallery</a></li>
+    <li class="active"><a href="download.html">Download</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h1>Download TechPacks</h1>
+  <p>Please complete the form below before accessing your download.</p>
+
+  <form method="get" action="thanks.html">
+
+    <!-- FIELDSET 1 -->
+    <fieldset>
+      <legend>Contact Information</legend>
+
+      <label>First Name* <input type="text" name= "fName" required></label>
+      
+      <label>Last Name* <input type="text" name= "lName" required></label>
+      
+      <label>Email* <input type="text" name= "email" required></label>
+     
+      <label>Cell Number* <input type="tel" name= "phone" required></label>
+     
+
+    
+
+   
+
+    </fieldset>
+
+    <!-- FIELDSET 2 -->
+    <fieldset>
+      <legend>Select File Format</legend>
+
+      <label>
+        <input type="checkbox" name="format" value="jpg">
+        JPG Image
+      </label>
+
+      <label>
+        <input type="checkbox" name="format" value="pdf">
+        PDF
+      </label>
+
+      <label>
+        <input type="checkbox" name="format" value="excel">
+        Excel Editable
+      </label>
+
+      <label>
+        <input type="checkbox" name="format" value="illustrator">
+        Illustrator (.AI)
+      </label>
+    </fieldset>
+
+    <!-- FIELDSET 3 -->
+    <fieldset>
+      <legend>License Type</legend>
+
+      <label>
+        <input type="radio" name="license" value="personal" required>
+        Personal Brand
+      </label>
+
+      <label>
+        <input type="radio" name="license" value="studio">
+        Studio / Agency
+      </label>
+
+      <label>
+        <input type="radio" name="license" value="student">
+        Student Use
+      </label>
+
+      <label for="category">TechPack Category</label>
+      <select id="category" name="category">
+        <option value="">Please Select</option>
+        <option value="tops">Tops</option>
+        <option value="bottoms">Bottoms</option>
+        <option value="outerwear">Outerwear</option>
+        <option value="activewear">Activewear</option>
+      </select>
+    </fieldset>
+
+    <label for="comments">Comments</label>
+    <textarea id="comments" name="comments"></textarea>
+
+    <input type="submit" value="Continue to Download">
+
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2026 Savvy TechPacks</p>
+</footer>
+
+</body>
+</html>
+
+   
+
+  </main>
+
+ 
