@@ -1,0 +1,486 @@
+/* ==========================
+   Savvy TechPacks Stylesheet
+   ========================== */
+
+/* ----- BASE / BODY ----- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f2f2f2; /* light grey body */
+  color: #111;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Make sure content isn't glued to the edge */
+header,
+main,
+footer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* ----- HEADER ----- */
+header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* ----- NAVIGATION (teacher-style behavior, your colors) ----- */
+nav {
+  background-color: #f4b400; /* bright Savvy yellow */
+  margin: 0;
+  padding: 18px 20px; /* taller yellow bar */
+}
+
+/* menu list */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* links */
+nav a {
+  display: flex;
+  align-items: center;
+  height: 48px;            /* at least 48px tall */
+  padding: 0 22px;
+  text-decoration: none;
+  color: #000;             /* normal items = black text on yellow */
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+
+/* non-active hover = turns white (does NOT disappear) */
+nav a:hover {
+  color: #ffffff;
+}
+
+/* active tab = black box ON TOP of yellow bar */
+nav li.active a {
+  background-color: #000000;
+  color: #f4b400; /* active text = yellow */
+}
+
+/* active hover = turns WHITE (per your request) */
+nav li.active a:hover {
+  color: #ffffff;
+}
+
+/* ----- MAIN CONTENT ----- */
+main {
+  padding-top: 18px;
+  padding-bottom: 24px;
+}
+
+/* Title (main) */
+main h1 {
+  color: #000000; /* black title */
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+/* Subtitles = medium grey */
+main h2,
+main h3 {
+  color: #666666; /* medium grey subtitles */
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-weight: 800;
+}
+
+ /* main image stuff here */
+
+figure.wrapped {
+    margin: 0 0 0 10px;
+    width: 30%;
+    float: right;
+}
+
+figure.wrapped img {
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption {
+    text-align: center;
+    font-size: .75rem;
+}
+   
+
+
+/* Paragraphs */
+main p {
+  margin-top: 0;
+  margin-bottom: 14px;
+  color: #111;
+  line-height: 1.45;
+}
+
+/* Emphasis / “important” */
+main strong {
+  font-weight: 800;
+  color: #000;
+}
+
+main em {
+  font-weight: 300;
+}
+
+/* Links in content (NOT footer) */
+main a {
+  color: #000;
+  font-weight: 700;
+}
+
+main a:hover {
+  color: #666666;
+}
+
+/* ----- LISTS (grey bar like teacher example) ----- */
+main ol {
+  background-color: #e6e6e6; /* grey bar behind the list */
+  padding: 12px 18px;
+  margin: 10px 0 16px 0;
+  border-radius: 6px;
+}
+
+/* Keep numbers lined up nicely */
+main ol li {
+  margin-left: 18px;
+  line-height: 1.35;
+}
+
+/* Optional: if you also want unordered lists styled */
+main ul {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+/* ----- FOOTER (fix visibility + phone yellow, not blue) ----- */
+footer {
+  background-color: #000000;
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+/* Make footer text visible */
+footer p {
+  margin: 4px 0;
+  color: #ffffff;     /* white text */
+  font-weight: 300;   /* thinnest look */
+  opacity: 1;         /* no fading */
+}
+
+/* Phone link MUST be yellow (not blue) */
+footer a {
+  color: #f4b400;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* Copyright slightly softer, but still readable */
+footer .copyright {
+  color: #bdbdbd;
+  font-weight: 300;
+}
+
+/* ===============================
+   Gallery Layout
+================================= */
+
+section.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+  padding: 10px;
+}
+
+section.gallery figure {
+    flex: 0 0 auto;   /* do NOT stretch */
+    width: 22%;       /* smaller size */
+    max-width: 280px; /* prevents large stretching */
+    margin: 0;
+}
+
+
+/* Image sizing — preserves ratio */
+section.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Caption styling */
+section.gallery figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555555;  /* medium grey */
+  margin-top: 6px;
+}
+
+
+main {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+section.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+  margin: 0;      /* remove any other margins */
+  padding: 0;     /* remove padding */
+}
+
+figure.wrapped {
+  width: 25%;
+}
+
+
+/* Base */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem 2rem;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1.2rem 0 0.5rem;
+}
+
+.lead {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  max-width: 70ch;
+}
+
+/* Header */
+.site-header {
+  padding: 1rem 1rem 0.5rem;
+}
+
+.brand-title {
+  display: block;
+  font-weight: 700;
+}
+
+.brand-tagline {
+  display: block;
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.2rem;
+}
+
+/* Nav (yellow bar like your screenshot) */
+.site-nav {
+  background: #f2b400;
+  padding: 0;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+}
+
+.site-nav .active a {
+  background: #111;
+  color: #f2b400;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 2px solid #eee;
+  padding: 1rem;
+  text-align: center;
+  color: #444;
+}
+
+.site-footer a { color: #444; }
+
+/* Form */
+.myform {
+  margin-top: 1rem;
+}
+
+.myform fieldset {
+  border: 2px solid #f2b400;
+  border-radius: 10px;
+  padding: 1rem 1.25rem 1.25rem;
+  margin: 1rem 0;
+}
+
+.myform legend {
+  font-weight: 700;
+  padding: 0 0.5rem;
+}
+
+.form-row {
+  margin: 0.85rem 0;
+}
+
+.myform label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.hint {
+  margin: 0.25rem 0 0.8rem;
+  color: #444;
+}
+
+.option {
+  display: block;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.group {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 0.75rem 0.9rem;
+  margin: 0.75rem 0 1rem;
+  background: #fafafa;
+}
+
+.group-title {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+}
+
+/* Inputs / selects / textarea */
+.myform input[type="text"],
+.myform input[type="email"],
+.myform input[type="tel"],
+.myform select,
+.myform textarea {
+  border: 1px solid #888;
+  padding: 0.5rem 0.6rem;
+  width: 320px;
+  max-width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  color: #111;
+}
+
+/* Make textarea sit below "Comments" and be taller */
+.myform textarea {
+  width: 520px;
+  height: 7rem;
+}
+
+/* Required fields look slightly tinted */
+.myform :required {
+  background-color: rgba(242, 180, 0, 0.12);
+}
+
+/* Submit button (border + round + padding + bg color) */
+.myform input[type="submit"] {
+  background-color: #111;
+  border: 2px solid #111;
+  padding: 0.9rem 1.4rem;
+  border-radius: 12px;
+  color: #f2b400;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 0.8rem;
+}
+
+.myform input[type="submit"]:hover {
+  opacity: 0.9;
+}
+
+/* Simple card on thanks page */
+.card {
+  border: 2px solid #f2b400;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  max-width: 70ch;
+  background: #fffdf2;
+}
+
+form {
+  max-width: 700px;
+}
+
+fieldset {
+  border: 2px solid #f2b400;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+label {
+  display: block;
+  margin-top: 0.8rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border-radius: 8px;
+  border: 1px solid #999;
+}
+
+textarea {
+  height: 120px;
+}
+
+input[type="submit"] {
+  margin-top: 1rem;
+  background-color: #f2b400;
+  border: 2px solid #111;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
