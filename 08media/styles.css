@@ -1,0 +1,773 @@
+/* =========================
+SAVVY TECHPACK STYLES
+========================= */
+
+/* Reset + layout */
+
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, Helvetica, sans-serif;
+background: #f5f5f5;
+color: #222;
+}
+
+/* Container width */
+header, nav, main, footer {
+max-width: 64rem;
+margin: 0 auto;
+padding: 1rem;
+}
+
+/* =========================
+HEADER
+========================= */
+header span,
+header p {
+color: #000;
+}
+
+/* =========================
+NAVIGATION
+========================= */
+nav {
+background: #F2B400;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style: none;
+display: flex;
+}
+
+nav li {
+flex: 1;
+}
+
+nav a {
+display: block;
+text-align: center;
+padding: .8rem;
+color: #000;
+text-decoration: none;
+font-weight: 700;
+text-transform: uppercase;
+border-bottom: solid 1px #eee;
+}
+
+nav a:hover {
+color: #fff;
+background: #d79e00;
+}
+
+nav .active a {
+background-color: #000;
+color: #F2B400;
+}
+
+/* =========================
+MAIN CONTENT
+========================= */
+main h1,
+main h2 {
+color: #000;
+}
+
+main a {
+color: #F2B400;
+text-decoration: none;
+}
+
+main a:hover {
+text-decoration: underline;
+}
+
+/* =========================
+FORM STYLING
+========================= */
+.myform input[type="text"],
+.myform input[type="email"],
+.myform input[type="tel"],
+.myform select,
+.myform textarea {
+border: 1px solid #888;
+padding: .5rem .6rem;
+width: 320px;
+max-width: 100%;
+border-radius: 10px;
+background: #F8E3A1;
+color: #111;
+}
+
+.myform textarea {
+width: 520px;
+height: 7rem;
+}
+
+.myform :required {
+background-color: rgba(242,180,0,.15);
+}
+
+/* =========================
+TECHPACK GALLERY
+========================= */
+.techpackGallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1rem;
+}
+
+.techpackGallery img {
+width: 100%;
+border-radius: 10px;
+transition: .3s;
+}
+
+.techpackGallery img:hover {
+box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.techpackGallery span {
+color: #000;
+font-weight: 600;
+}
+
+/* =========================
+FOOTER
+========================= */
+footer {
+border-top: solid #F2B400 1px;
+color: #000;
+text-align: center;
+}
+
+footer a {
+color: #F2B400;
+text-decoration: none;
+}
+
+/* =========================
+MEDIA QUERY
+========================= */
+@media only screen and (max-width: 600px) {
+nav ul {
+flex-direction: column;
+}
+}
+.savvyGallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.savvyGallery figure {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+}
+
+.savvyGallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.savvyGallery figcaption {
+    margin-top: .5rem;
+    font-weight: 600;
+}
+/* Gallery card */
+.savvyGallery figure {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    text-align: center;
+
+    /* default shadow */
+    box-shadow: 0 6px 18px rgba(0,0,0,.12);
+
+    /* smooth animation */
+    transition: all .3s ease;
+}
+
+/* Hover effect */
+.savvyGallery figure:hover {
+    box-shadow: 0 15px 35px rgba(0,0,0,.25);
+    transform: translateY(-6px);
+}
+
+/* Image hover subtle zoom */
+.savvyGallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform .3s ease;
+}
+
+.savvyGallery figure:hover img {
+    transform: scale(1.03);
+}
+/* ===============================
+SAVVY TECHPACK GALLERY
+================================ */
+
+.subtitle{
+margin-bottom:2rem;
+color:#555;
+}
+
+/* GRID */
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:2rem;
+margin-top:2rem;
+}
+
+/* CARD */
+.gallery-card{
+background:white;
+padding:1rem;
+border-radius:14px;
+box-shadow:0 6px 18px rgba(0,0,0,.08);
+transition:all .25s ease;
+text-align:center;
+}
+
+/* IMAGE */
+.gallery-card img{
+width:100%;
+border-radius:10px;
+display:block;
+}
+
+/* CAPTION */
+.gallery-card figcaption{
+margin-top:.8rem;
+font-weight:600;
+color:#111;
+}
+
+/* HOVER SHADOW (Angelo style) */
+.gallery-card:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 26px rgba(0,0,0,.18);
+}
+/* =========================
+BOX MODEL
+========================= */
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#f5f5f5;
+color:#222;
+line-height:1.6;
+}
+
+/* =========================
+WIDTH CONTROL + CENTER
+========================= */
+header, nav, main, footer{
+max-width:64rem;
+margin:0 auto;
+}
+
+/* =========================
+HEADER FLEXBOX LOGO
+========================= */
+.site-header{
+padding:20px 0;
+}
+
+.logo-wrap{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+width:100px;
+}
+
+.tag{
+font-size:14px;
+color:#777;
+}
+
+/* =========================
+NAV
+========================= */
+.nav{
+display:flex;
+gap:30px;
+list-style:none;
+margin-top:15px;
+}
+
+.nav a{
+text-decoration:none;
+color:#111;
+font-weight:600;
+padding:10px 16px;
+border-radius:6px;
+}
+
+.nav .active a{
+background:#000;
+color:#fff;
+}
+
+/* =========================
+HERO IMAGE
+========================= */
+.hero{
+position:relative;
+margin:20px auto;
+max-width:64rem;
+overflow:hidden;
+border-radius:12px;
+}
+
+.hero img{
+width:100%;
+display:block;
+}
+
+.hero-text{
+position:absolute;
+bottom:30px;
+left:30px;
+color:white;
+background:rgba(0,0,0,.5);
+padding:20px;
+border-radius:8px;
+}
+
+/* =========================
+MAIN CONTENT
+========================= */
+.container{
+padding:20px;
+}
+
+/* =========================
+GRADIENT (assignment)
+========================= */
+.site-footer{
+margin-top:40px;
+padding:20px;
+text-align:center;
+background:linear-gradient(to bottom,#f0a41a,#c8840d);
+color:white;
+}
+
+/* =========================
+GALLERY CARDS + SHADOW HOVER
+========================= */
+.card img{
+width:100%;
+border-radius:10px;
+transition:.3s;
+}
+
+.card img:hover{
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+transform:translateY(-4px);
+}
+
+/* =========================
+MEDIA QUERY
+========================= */
+@media only screen and (max-width:600px){
+
+.nav{
+flex-direction:column;
+gap:10px;
+}
+
+.hero-text{
+position:static;
+margin-top:10px;
+}
+
+}
+/* ===== Unit 08 Media Pages ===== */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* header */
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+header span {
+    margin: 0;
+    color: #111;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* small screen navigation */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #111;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #ddd;
+    }
+
+    nav .active a {
+        background-color: #111;
+        color: #f2b400;
+    }
+}
+
+/* large screen navigation */
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #f2b400;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        padding: .9rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #111;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-left: solid 1px rgba(0,0,0,0.15);
+    }
+
+    nav .active a {
+        color: #f2b400;
+        background-color: #111;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+}
+
+/* main */
+main {
+    padding: 0 2vw 2rem 2vw;
+}
+
+main h1 {
+    color: #111;
+    font-size: 2.2rem;
+    margin: 1rem 0 .8rem 0;
+    font-weight: 800;
+}
+
+main h2 {
+    color: #111;
+    margin: 1.2rem 0 .3rem 0;
+    font-weight: 700;
+}
+
+main p {
+    color: #333;
+    margin: 0 0 .9rem 0;
+    line-height: 150%;
+    font-size: 1.1rem;
+}
+
+main a {
+    color: #d4a437;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.pageHero {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+/* table */
+table.activities {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem 0;
+}
+
+table.activities th {
+    background-color: #111;
+    color: white;
+    padding: .7rem 2%;
+    text-align: left;
+}
+
+table.activities td {
+    color: #333;
+    padding: .6rem 2%;
+}
+
+table.activities tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+table.activities tr:hover {
+    background-color: #ddd;
+}
+
+/* audio/video spacing */
+audio,
+iframe {
+    margin: 1rem 0 2rem 0;
+    display: block;
+}
+
+/* footer */
+footer {
+    border-top: solid #f2b400 1px;
+    text-align: center;
+    color: #111;
+    font-size: .9rem;
+    padding: 1rem 0;
+    clear: both;
+}
+
+footer a {
+    color: #111;
+}
+
+/* width control */
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+/* ===== Unit 08 Media Pages ===== */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+}
+
+/* header */
+header {
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+header span {
+    margin: 0;
+    color: #111;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* small screen navigation */
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #111;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 1px #ddd;
+    }
+
+    nav .active a {
+        background-color: #111;
+        color: #f2b400;
+    }
+}
+
+/* large screen navigation */
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #f2b400;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+        padding: .9rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #111;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        border-left: solid 1px rgba(0,0,0,0.15);
+    }
+
+    nav .active a {
+        color: #f2b400;
+        background-color: #111;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+}
+
+/* main */
+main {
+    padding: 0 2vw 2rem 2vw;
+}
+
+main h1 {
+    color: #111;
+    font-size: 2.2rem;
+    margin: 1rem 0 .8rem 0;
+    font-weight: 800;
+}
+
+main h2 {
+    color: #111;
+    margin: 1.2rem 0 .3rem 0;
+    font-weight: 700;
+}
+
+main p {
+    color: #333;
+    margin: 0 0 .9rem 0;
+    line-height: 150%;
+    font-size: 1.1rem;
+}
+
+main a {
+    color: #d4a437;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main a:hover {
+    color: #111;
+    text-decoration: underline;
+}
+
+.pageHero {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+/* table */
+table.activities {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 2rem 0;
+}
+
+table.activities th {
+    background-color: #111;
+    color: white;
+    padding: .7rem 2%;
+    text-align: left;
+}
+
+table.activities td {
+    color: #333;
+    padding: .6rem 2%;
+}
+
+table.activities tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+table.activities tr:hover {
+    background-color: #ddd;
+}
+
+/* audio/video spacing */
+audio,
+iframe {
+    margin: 1rem 0 2rem 0;
+    display: block;
+}
+
+/* footer */
+footer {
+    border-top: solid #f2b400 1px;
+    text-align: center;
+    color: #111;
+    font-size: .9rem;
+    padding: 1rem 0;
+    clear: both;
+}
+
+footer a {
+    color: #111;
+}
+
+/* width control */
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
